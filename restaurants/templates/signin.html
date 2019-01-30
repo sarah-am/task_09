@@ -4,6 +4,7 @@
 {% block title %}Sign In{% endblock title %}
 
 {% block content %}
+
 <br>
 <div class="card">
   <h5 class="card-header">Sign in: </h5>
@@ -12,13 +13,9 @@
         <form action="{% url 'signin' %}" method="POST">
             {% csrf_token %}
             {{form|crispy}}
-            <input type="submit" value="Update" class="btn btn-outline-primary">
+            <input type="submit" value="Enter" class="btn btn-outline-primary">
         </form>
     </p>
   </div>
 </div>
 {% endblock content %}
-
-
-
-
